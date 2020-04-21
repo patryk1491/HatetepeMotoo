@@ -1,0 +1,513 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background-size:cover;
+    background-image:url(http://olczykpazik.eu/public/img/tlo.jpg);
+}
+.main-container{
+    min-height:100vh;
+    background-color: rgba(31, 31, 31, 0.9)
+}
+.section{
+    display:flex;
+    height:16vh;
+    background-color:black;
+}
+.main-header{
+    font-family: 'Righteous', sans-serif;
+    color:rgb(4, 216, 231);
+    width:40vw;
+    padding-left:2vw;
+}
+.main-header h1{
+    line-height: 16vh;
+    font-size: 45px;
+    color:#ccffff;
+}
+.menu{
+    width:60vw;
+    font-family: 'raleway', sans-serif;
+    font-size:22px;
+}
+.menu ul{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height:8vh;
+    border-bottom: 1px solid rgb(4, 216, 231);
+    margin: 3vh 2vw 0 0;
+    width:58vw;
+    background-color:black;
+}
+.menu ul li{
+    margin-bottom:1px;
+    display:block;
+    height:8vh;
+    line-height:8vh;
+}
+.menu a{
+    text-decoration: none;
+    color:rgb(4, 216, 231);
+}
+.menu a:hover{
+    font-weight: bold;
+    text-decoration: none;
+    color:rgb(4, 216, 231);
+}
+
+.login{
+    margin: 8vh auto 0 auto;
+    color:white;
+    width:50%;
+}
+.login h2{
+    text-align:center;
+    color:#ccffff;
+}
+.login .butcap{
+    display:flex;
+    margin-bottom: 3vh;
+    position:relative;
+    align-items: center;
+}
+.login .butcap .btn.btn-primary{
+    margin:0;
+    height:50%;
+    position: absolute;
+    right:15%;
+}
+.btn.btn-primary{
+    display:block;
+    margin: 5vh auto 0 auto;
+}
+.list-of-ads-container h2{
+    margin: 8vh 0 0 0;
+    text-align:center;
+    color:#ccffff;
+    font-size:36px;
+}
+
+.single-ad{
+    background-color: rgba(31, 31, 31, 0.8);
+    margin:10vh auto 0 auto;
+    width:75%;
+    height:38vh;
+    display:flex;
+    font-family: 'raleway', sans-serif;
+    color:white;
+}
+.single-ad:last-child{
+    margin-bottom:3vh;
+}
+.single-ad .zdjecie{
+    padding: auto;
+    width:40%;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.single-ad img{
+    max-width:100%;
+    max-height:36vh;
+}
+.single-ad .info{
+    width: 70%;
+    position:relative;
+}
+.single-ad form.removeb{
+    position:absolute;
+    bottom: 5%;
+    left:25%;
+}
+.single-ad form.editb{
+    position:absolute;
+    bottom: 5%;
+    left:45%;
+}
+.single-ad .info .marka{
+    position:absolute;
+    top:10%;
+    left:25%;
+    font-size: 30px;
+    font-weight: bold;
+    border-bottom: 1px solid rgb(4, 216, 231);
+}
+.single-ad .info .rok-produkcji{
+    position:absolute;
+    top:35%;
+    left:25%;
+    font-size: 18px;
+}
+.single-ad .info .cena{
+    position:absolute;
+    top:47%;
+    left:25%;
+    font-size: 18px;
+    color:rgb(4, 216, 231);
+    font-weight: bold;
+}
+.single-ad .info .phone{
+    position:absolute;
+    bottom:15%;
+    left:25%;
+    font-size: 13px;
+}
+.single-ad .info .user{
+    position:absolute;
+    bottom:0;
+    left:25%;
+    font-size: 13px;
+}
+/*.single-ad .info .addcomment{*/
+/*    position:absolute;*/
+/*    top:2%;*/
+/*    right:2%;*/
+/*    width:23%;*/
+/*}*/
+/*.comments{*/
+/*    font-size: 12px;*/
+/*    background-color: rgba(31, 31, 31, 0.8);*/
+/*    width:50%;*/
+/*    margin: 0 10% 0 40%;*/
+/*    color:white;*/
+/*}*/
+/*.comments .comment{*/
+/*    margin-bottom: 0;*/
+/*}*/
+.new-add{
+    width:60%;
+    margin:8vh auto 0 auto;
+    color:white;
+}
+.new-add h2{
+    text-align: center;
+    margin: 0 0 5vh 0 ;
+    color:#ccffff;
+}
+.new-add .form-row{
+    margin:0;
+}
+.new-add .form-row:first-child{
+    margin: 0 0 8vh 0;
+}
+.new-add .form-group{
+    margin:5vh auto 0 auto;
+}
+.my-adds{
+    text-align:center;
+    width:75%;
+    color:white;
+    margin:8vh auto 0 auto;
+}
+.my-adds h2{
+    color:#ccffff;
+    text-align: center;
+}
+.list-of-ads-container h2.notlogged{
+    margin-top:25vh;
+    font-size:40px;
+    animation: colorch 1.2s;
+}
+.new-add .notlogged{
+    margin-top:25vh;
+    font-size:40px;
+    animation: colorch 1.2s;
+}
+.filters{
+    width:98%;
+    color:white;
+    margin: 5vh auto 0 auto;
+}
+.footer{
+    position:fixed;
+    bottom:0;
+    height:3vh;
+    background-color:black;
+    color:white;
+    width:100%;
+    text-align:center;
+    line-height:3vh;
+}
+.footer p{
+    font-size: 10px;
+    margin:0;
+    padding:0;
+}
+
+/* CODE FOR STYLING DIV WHICH APPEARS E.G. WHEN USER WON'T FILL ALL FIELDS WHILE ADDING ADVERT */
+.error {
+    text-align: center;
+    font-size:30px;
+    color:rgb(252, 1, 45);
+    margin-top:3vh;
+    animation: deleteer 5s forwards, deleteer2 5s 2s forwards;
+}
+
+@media only screen and (max-width: 1150px) {
+    .section{
+        height:13vh;
+    }
+    .menu {
+        font-size: 18px;
+    }
+    .main-header h1{
+        font-size: 40px;
+        line-height: 13vh;
+    }
+    .menu ul{
+        margin-top:2.5vh;
+    }
+    .single-ad{
+        width:75%;
+        height:30vh;
+    }
+    .single-ad img{
+        max-height:28vh;
+    }
+    .g-recaptcha {
+        transform:scale(0.85);
+        transform-origin: 0 0;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .section{
+        height:13.5vh;
+        flex-wrap:wrap;
+    }
+    .menu {
+        margin: 0 5vw 0 5vw;
+    }
+    .menu ul{
+        margin:0;
+        width:90vw;
+        height:6vh;
+        border: none;
+        justify-content: space-around;
+        border-top: 1px solid rgb(4, 216, 231);
+    }
+    .main-header {
+        width:100vw;
+        margin-bottom:0;
+    }
+    .main-header h1{
+        line-height: 6vh;
+        font-size: 36px;
+    }
+    .login{
+        margin: 12vh auto 0 auto;
+    }
+    .list-of-ads-container h2{
+        margin: 5vh 0 0 0;
+        font-size:30px;
+    }
+    .single-ad{
+        width:90%;
+        height:26vh;
+    }
+    .single-ad img{
+        max-height:24vh;
+    }
+    .single-ad .info .marka{
+        font-size:24px;
+    }
+    .new-add{
+        width:70%;
+        margin:12vh auto 0 auto;
+    }
+    .g-recaptcha {
+        transform:scale(0.75);
+        transform-origin: 0 0;
+    }
+    .login .butcap .btn.btn-primary{
+        right:3%;
+        top:20%;
+    }
+}
+
+@media only screen and (max-width: 630px) {
+
+    .menu {
+        font-size:17px;
+        margin: 0;
+    }
+    .menu ul{
+        width:100vw;
+    }
+    .main-header{
+        padding-left:5vw;
+    }
+    .login{
+        width:70%;
+    }
+    .login h2{
+        margin-bottom:5vh;
+        font-size:28px;
+    }
+    .list-of-ads-container h2{
+        font-size:28px;
+    }
+    .single-ad{
+        width:96%;
+        margin:6vh auto 0 auto;
+        height:24vh;
+    }
+    .single-ad .zdjecie{
+        padding: 4vh 0 4vh 0;
+    }
+    .single-ad img{
+        max-height:16vh;
+    }
+    .single-ad .info .marka{
+        font-size:20px;
+        left:15%;
+    }
+    .single-ad .info .rok-produkcji{
+        font-size:14px;
+        left:15%;
+    }
+    .single-ad .info .cena{
+        font-size:14px;
+        left:15%;
+    }
+    .single-ad form.editb .btn.btn-primary{
+        font-size:14px;
+    }
+    .single-ad form.removeb .btn.btn-danger{
+        font-size:14px;
+    }
+    .single-ad form.removeb{
+        left:15%;
+        font-size:14px;
+    }
+    .single-ad .info .phone{
+        left:15%;
+        font-size:10px;
+    }
+    .single-ad .info .user{
+        left:15%;
+        font-size:10px;
+    }
+    .new-add{
+        width:75%;
+    }
+    .new-add h2 {
+        font-size:28px;
+    }
+    .list-of-ads-container h2.notlogged {
+        font-size: 28px;
+    }
+    .new-add .notlogged{
+        margin-top:25vh;
+        font-size:28px;
+    }
+    .footer p{
+        font-size: 8px;
+    }
+    .g-recaptcha {
+        transform:scale(0.65);
+        transform-origin: 0 0;
+    }
+    .login .butcap .btn.btn-primary{
+        top:10%;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+
+    .menu {
+        font-size:16px;
+    }
+    .main-header h1{
+        font-size: 30px;
+    }
+    .list-of-ads-container h2{
+        margin: 3vh 0 0 0;
+        font-size:25px;
+    }
+    .single-ad{
+        height:22vh;
+    }
+    .single-ad .zdjecie{
+        padding: 4vh 0 4vh 0;
+    }
+    .single-ad img{
+        max-height:14vh;
+    }
+    .single-ad .info .marka{
+        font-size:16px;
+    }
+    .single-ad .info .rok-produkcji{
+        font-size:12px;
+    }
+    .single-ad form.editb .btn.btn-primary{
+        left:50%;
+        font-size:12px;
+    }
+    .single-ad form.editb{
+        left:50%;
+    }
+    .single-ad form.removeb .btn.btn-danger{
+        font-size:12px;
+    }
+    .single-ad .info .cena{
+        font-size:12px;
+    }
+    .single-ad .info .phone{
+        font-size:8px;
+    }
+    .single-ad .info .user{
+        font-size:8px;
+    }
+    .new-add{
+        width:85%;
+    }
+    .new-add h2{
+        font-size:26px;
+    }
+    .login .butcap .btn.btn-primary{
+        right:0;
+        top:2%;
+    }
+    .g-recaptcha {
+        transform:scale(0.55);
+        transform-origin: 0 0;
+    }.error {
+         font-size:22px;
+        margin-top: 5vh;
+     }
+    .single-ad .info .addcomment{
+        width:30%;
+        font-size:10px;
+        top:5%;
+        text-align:center;
+    }
+    .comments{
+        font-size: 10px;
+        width:96%;
+        margin: 0 auto 0 auto;
+    }
+    .addcomment textarea{
+        max-height:5vh;
+    }
+    .addcomment .btn.btn-primary{
+        margin-top:1vh;
+    }
+}
+@keyframes colorch {
+    from {color: red;}
+    to {color: #ccffff;}
+}
+@keyframes deleteer {
+    from {opacity:1;}
+    to {opacity:0;}
+}
+@keyframes deleteer2 {
+    from{height:auto;}
+    to{height:0;}
+}
+
+
+>>>>>>> master
